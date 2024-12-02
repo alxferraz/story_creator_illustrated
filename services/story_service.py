@@ -13,10 +13,10 @@ class StoryService:
         """
         self.api_service = api_service
         self.question_list = ["Who is your story about?",
-                     "Can you tell me more about these guys?",
-                     "Where does this story takes place?",
-                     "Tell me something really important that happens in the story",
-                     "Tell me more about how you want the story to end. Do you want a joyful ending? A sad ending?",]
+                     "Can you tell me more about this/these guy(s)?",
+                     "Where does this story take place?",
+                     "Tell me something significant that happens in the story",
+                     "Can you tell me a virtue or moral value you want to highlight, or a bottom line you want this story to teach?"]
         self.answer_list=[]
 
     def send_prompt(self, prompt):
