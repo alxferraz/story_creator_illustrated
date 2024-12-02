@@ -3,7 +3,7 @@ A Python app for creating small, illustrated, children`s book stories.
 
 ## Why?
 Since children stories are often simple they make the perfect candidates for small stories created using GenAI tools like Anthropic's Claude.ai. As children are essentialy visual beings it seems really important to add illustrations whenever possible.
-The app will ask questions about the main characters, their features, places where the story takes place and more and then prompt Claude for a story that contemplates all the aspects informed by the user. Once the story's complete text is returned from the API the app prompts Claude for a title for the final text a summary, and an illustration from [Pollinations.ai](https://pollinations.ai/) to combine it all into a a single PDF file.
+The app will ask questions about the main characters, their features, places where the story takes place and more and then prompt Claude for a story that contemplates all the aspects informed by the user. Once the story's complete text is returned from the API the app prompts Claude for a title for the final text, a summary, and an illustration from [Pollinations.ai](https://pollinations.ai/) to combine it all into a a single PDF file.
 
 ## How to run
 
