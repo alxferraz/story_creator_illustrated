@@ -1,9 +1,9 @@
 # story_creator_illustrated
 A Python app for creating small, illustrated, child book like stories.
 
-##How to run
+## How to run
 
-set your Claude API key using
+Set your Claude API key using
 
 `export ANTHROPIC_API_KEY='<API_KEY>'`
 
@@ -13,7 +13,7 @@ Make sure you have the following pip packages installed
 `pip3 install requests`
 `pip3 install reportlab`
 
-run using
+Run using
 
 `python3 main.py`
 
