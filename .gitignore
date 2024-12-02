@@ -51,3 +51,6 @@ docs/_build/
 
 #generated stories
 *.pdf
+
+#MacOS 
+.DS_Store
