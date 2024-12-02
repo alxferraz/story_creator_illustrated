@@ -14,7 +14,9 @@ Set your Claude API key using
 Make sure you have the following pip packages installed
 
 `pip3 install anthropic`
+
 `pip3 install requests`
+
 `pip3 install reportlab`
 
 Run using
