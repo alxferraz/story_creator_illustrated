@@ -1,3 +1,5 @@
+import os
+import shlex
 from services.story_service import StoryService
 from adapters.claude_api_adapter import ClaudeApiAdapter
 
@@ -32,15 +34,11 @@ def main():
         if current_question_index == question_list_length:
             try:
                 response = story_service.create_story()
-                print("\nResponse:")
-                print(f"TITLE:{response.title}\n")
-                print(f"SUMMARY:{response.summary}\n")
-                print(f"COMPLETE_TEXT:{response.complete_text}\n")
-                print(f"IMAGE PROMPT:{response.image_prompt}\n")
-                print(f"IMAGE PATH:{response.image_path}\n")
+                print(f"Awesome! your story is ready at:{response.file_path}\n")
+                os.system("open " + shlex.quote(response.file_path))
             except Exception as e:
                 print(f"An error occurred: {e}")
             break
-
+    
 if __name__ == "__main__":
     main()

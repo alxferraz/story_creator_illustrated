@@ -104,6 +104,4 @@ class BookPDFGenerator:
         
         # Build PDF
         doc.build(story)
-        
-        print(f"PDF created successfully at {self.output_path}")
         return self.output_path

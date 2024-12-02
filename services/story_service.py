@@ -77,6 +77,6 @@ class StoryService:
         title = self.title_text(complete_text)
         pdf_generator = BookPDFGenerator(title+'.pdf');
         image_path = IllustrationService.download_image(title)
-        story =  Story(title,summary,complete_text, title,image_path)
-        pdf_generator.create_book(title, summary, complete_text, image_path)
+        file_path = pdf_generator.create_book(title, summary, complete_text, image_path)
+        story =  Story(title,summary,complete_text, title,image_path, file_path)
         return story

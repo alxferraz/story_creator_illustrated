@@ -28,6 +28,7 @@ The output is a PDF file with the story and an illustration at the project`s roo
 - The app runs locally in a console.
 - The app restricts the content type to child stories and has some measures to avoid sensitive and controversial themes.
 - User informed contexts are not persisted between creation sessions.
-- Story's complete texts are limited to 400 characters
-- The user's answers are not persisted anywhere once the app terminates
+- Story's complete texts are limited to 400 characters.
+- The user's answers are not persisted anywhere once the app terminates.
+- Before terminating the app will try opening the pdf file using `os.system("open " + shlex.quote(response.file_path))` which only seems to work in MacOS.
 

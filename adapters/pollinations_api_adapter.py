@@ -38,14 +38,12 @@ class PolinationsApiAdapter:
             
             # Full path in temp directory
             file_path = os.path.join(temp_dir, filename)
-            print(file_path)
             
             # Write the content to a file
             with open(file_path, 'wb') as file:
                 for chunk in response.iter_content(chunk_size=8192):
                     file.write(chunk)
             
-            print(f"Image downloaded to: {file_path}")
             return file_path
         
         except requests.RequestException as e:
