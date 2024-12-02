@@ -34,7 +34,7 @@ def main():
         if current_question_index == question_list_length:
             try:
                 response = story_service.create_story()
-                print(f"Awesome! your story is ready at:{response.file_path}\n")
+                print(f"Awesome! your story is ready at:{response.file_path}\n Let me show you!")
                 os.system("open " + shlex.quote(response.file_path))
             except Exception as e:
                 print(f"An error occurred: {e}")
